@@ -182,26 +182,28 @@ html, body, [class*="css"] { font-family: 'Syne', sans-serif; }
 """, unsafe_allow_html=True)
 
 # ─── Data ──────────────────────────────────────────────────────────────────────
-# 🔧 EDITA AQUÍ: reemplaza los placeholders con tus datos reales
 CLASSES = {
     6: {
         "color": "#c8f04d",
         "label": "cl6",
-        "title": "Desarrollo de aplicaciones web para interfaces multimodales.",  
+        "title": "Desarrollo de aplicaciones web para interfaces multimodales.",
         "apps": [
             {
                 "name": "Mi primera app",
-                "streamlit": "https://natilladearequipe.streamlit.app",  
-                 "github": "https://github.com/TU-USUARIO/TU-REPO"
+                "desc": "Mi primera app en Streamlit.",
+                "icon": "📊",
+                "streamlit": "https://natilladearequipe.streamlit.app",
+                "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
             {
-                "name": "Cuento ",
+                "name": "Cuento",
+                "desc": "Generador de cuentos interactivos.",
+                "icon": "📖",
                 "streamlit": "https://amarillacomogato.streamlit.app",
-                 "github": "https://github.com/TU-USUARIO/TU-REPO"
+                "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
-            
         ],
     },
     7: {
@@ -211,21 +213,26 @@ CLASSES = {
         "apps": [
             {
                 "name": "Traductor",
+                "desc": "App de traducción de texto.",
+                "icon": "🌐",
                 "streamlit": "https://traduciendooo.streamlit.app",
-                 "github": "https://github.com/TU-USUARIO/TU-REPO"
+                "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
             {
                 "name": "Reconocimiento óptico de caracteres con audio",
+                "desc": "OCR combinado con síntesis de voz.",
+                "icon": "🎙️",
                 "streamlit": "https://audicionandopara.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
             {
                 "name": "Reconocimiento óptico de caracteres",
+                "desc": "Extracción de texto desde imágenes.",
+                "icon": "🔍",
                 "streamlit": "https://reconociendocaracter.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "🔍",
                 "screenshot": None,
             },
         ],
@@ -237,18 +244,24 @@ CLASSES = {
         "apps": [
             {
                 "name": "Análisis de sentimientos",
+                "desc": "Clasificación de emociones en textos.",
+                "icon": "😶",
                 "streamlit": "https://tristepqnomepagan.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
             {
                 "name": "WordCloud Studio",
+                "desc": "Generador de nubes de palabras.",
+                "icon": "☁️",
                 "streamlit": "https://cuandopagan.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
             {
                 "name": "Demo de TF-IDF con Preguntas y Respuestas",
+                "desc": "Búsqueda semántica con TF-IDF.",
+                "icon": "❓",
                 "streamlit": "https://todavianomepagan.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
@@ -262,17 +275,20 @@ CLASSES = {
         "apps": [
             {
                 "name": "Reconocimiento de Imágenes",
+                "desc": "Clasificación de imágenes con IA.",
+                "icon": "🖼️",
                 "streamlit": "https://tamalitootabueno.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
             {
                 "name": "Detección de Objetos en Imágenes",
+                "desc": "Detección de objetos con YOLO.",
+                "icon": "🎯",
                 "streamlit": "https://yolooenel2013.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "screenshot": None,
             },
-        
         ],
     },
 }
@@ -320,7 +336,6 @@ for class_num, info in CLASSES.items():
     color = info["color"]
     n = len(info["apps"])
 
-    # Section header
     st.markdown(f"""
     <div class="section-hdr {label}">
         <div class="section-num">{class_num}</div>
@@ -332,7 +347,6 @@ for class_num, info in CLASSES.items():
     </div>
     """, unsafe_allow_html=True)
 
-    # Cards grid
     cols = st.columns(min(n, 3), gap="small")
     for i, app in enumerate(info["apps"]):
         with cols[i % 3]:
