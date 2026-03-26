@@ -297,7 +297,7 @@ CLASSES = {
 st.markdown("""
 <div class="hero">
   <div class="hero-tag">Portafolio de aplicaciones</div>
-  <h1>Portafolio <br>de apps de <em>interfaces</em> &amp; multimodales</h1>
+  <h1>Portafolio <br>de apps de <em>interfaces</em> amp; multimodales</h1>
   <p class="hero-desc">
     Colección de aplicaciones interactivas desarrolladas durante el curso,
     desplegadas en Streamlit y con código abierto en GitHub.
