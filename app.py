@@ -2,8 +2,7 @@ import streamlit as st
 
 # ─── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Portafolio de Apps",
-    page_icon="🚀",
+    page_title="Portafolio de apps de interfaces multimodales",
     layout="wide",
 )
 
@@ -188,59 +187,43 @@ CLASSES = {
     6: {
         "color": "#c8f04d",
         "label": "cl6",
-        "title": "Nombre del tema de la clase",  # ← edita
+        "title": "Desarrollo de aplicaciones web para interfaces multimodales.",  # ← edita
         "apps": [
             {
-                "name": "Nombre de la App 6.1",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",  # ← edita
-                "github": "https://github.com/TU-USUARIO/TU-REPO",  # ← edita
-                "icon": "📊",
+                "name": "Mi primera app",
+                "streamlit": "https://natilladearequipe.streamlit.app",  # ← edita
+                 "github": "https://github.com/TU-USUARIO/TU-REPO"
                 "screenshot": None,  # ← pon la ruta o URL de la imagen, o None
             },
             {
-                "name": "Nombre de la App 6.2",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
-                "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "📈",
+                "name": "Cuento ",
+                "streamlit": "https://amarillacomogato.streamlit.app",
+                 "github": "https://github.com/TU-USUARIO/TU-REPO"
                 "screenshot": None,
             },
-            {
-                "name": "Nombre de la App 6.3",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
-                "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "🗺️",
-                "screenshot": None,
-            },
+            
         ],
     },
     7: {
         "color": "#4df0b4",
         "label": "cl7",
-        "title": "Nombre del tema de la clase",
+        "title": "Interfaces de voz a texto.",
         "apps": [
             {
-                "name": "Nombre de la App 7.1",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
-                "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "🤖",
+                "name": "Traductor",
+                "streamlit": "https://traduciendooo.streamlit.app",
+                 "github": "https://github.com/TU-USUARIO/TU-REPO"
                 "screenshot": None,
             },
             {
-                "name": "Nombre de la App 7.2",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
+                "name": "Reconocimiento óptico de caracteres con audio",
+                "streamlit": "https://audicionandopara.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "💬",
                 "screenshot": None,
             },
             {
-                "name": "Nombre de la App 7.3",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
+                "name": "Reconocimiento óptico de caracteres",
+                "streamlit": "https://reconociendocaracter.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
                 "icon": "🔍",
                 "screenshot": None,
@@ -250,30 +233,24 @@ CLASSES = {
     8: {
         "color": "#f0a84d",
         "label": "cl8",
-        "title": "Nombre del tema de la clase",
+        "title": "Procesamiento de lenguaje Natural.",
         "apps": [
             {
-                "name": "Nombre de la App 8.1",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
+                "name": "Análisis de sentimientos",
+                "streamlit": "https://tristepqnomepagan.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "🧠",
                 "screenshot": None,
             },
             {
-                "name": "Nombre de la App 8.2",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
+                "name": "WordCloud Studio",
+                "streamlit": "https://cuandopagan.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "📉",
                 "screenshot": None,
             },
             {
-                "name": "Nombre de la App 8.3",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
+                "name": "Demo de TF-IDF con Preguntas y Respuestas",
+                "streamlit": "https://todavianomepagan.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "🌐",
                 "screenshot": None,
             },
         ],
@@ -281,32 +258,21 @@ CLASSES = {
     9: {
         "color": "#c44df0",
         "label": "cl9",
-        "title": "Nombre del tema de la clase",
+        "title": "Aplicaciones con visión artificial.",
         "apps": [
             {
-                "name": "Nombre de la App 9.1",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
+                "name": "Reconocimiento de Imágenes",
+                "streamlit": "https://tamalitootabueno.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "✨",
                 "screenshot": None,
             },
             {
-                "name": "Nombre de la App 9.2",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
+                "name": "Detección de Objetos en Imágenes",
+                "streamlit": "https://yolooenel2013.streamlit.app",
                 "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "🎯",
                 "screenshot": None,
             },
-            {
-                "name": "Nombre de la App 9.3",
-                "desc": "Descripción breve de lo que hace esta app.",
-                "streamlit": "https://TU-APP.streamlit.app",
-                "github": "https://github.com/TU-USUARIO/TU-REPO",
-                "icon": "🚀",
-                "screenshot": None,
-            },
+        
         ],
     },
 }
