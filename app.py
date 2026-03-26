@@ -193,7 +193,7 @@ CLASSES = {
                 "name": "Mi primera app",
                 "streamlit": "https://natilladearequipe.streamlit.app",  
                  "github": "https://github.com/TU-USUARIO/TU-REPO"
-                "screenshot": None, 
+                "screenshot": None,
             },
             {
                 "name": "Cuento ",
