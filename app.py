@@ -187,13 +187,13 @@ CLASSES = {
     6: {
         "color": "#c8f04d",
         "label": "cl6",
-        "title": "Desarrollo de aplicaciones web para interfaces multimodales.",  # ← edita
+        "title": "Desarrollo de aplicaciones web para interfaces multimodales.",  
         "apps": [
             {
                 "name": "Mi primera app",
-                "streamlit": "https://natilladearequipe.streamlit.app",  # ← edita
+                "streamlit": "https://natilladearequipe.streamlit.app",  
                  "github": "https://github.com/TU-USUARIO/TU-REPO"
-                "screenshot": None,  # ← pon la ruta o URL de la imagen, o None
+                "screenshot": None, 
             },
             {
                 "name": "Cuento ",
