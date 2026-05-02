@@ -359,22 +359,13 @@ CLASSES = {
     13: {
         "color": "#f0e44d",
         "label": "cl13",
-        "title": "Nombre del tema de la clase 13.",
+        "title": "Sistemas con Internet de las Cosas..",
         "apps": [
             {
-                "name": "Nombre de la App 13.1",
-                "desc": "Descripción breve de la app.",
+                "name": "Control por voz",
                 "icon": "🟡",
-                "streamlit": "https://TU-APP.streamlit.app",
-                "github": "https://github.com/laugc2407-bit/TU-REPO",
-                "screenshot": None,
-            },
-            {
-                "name": "Nombre de la App 13.2",
-                "desc": "Descripción breve de la app.",
-                "icon": "🟡",
-                "streamlit": "https://TU-APP.streamlit.app",
-                "github": "https://github.com/laugc2407-bit/TU-REPO",
+                "streamlit": "https://vocesss.streamlit.app",
+                "github": "https://github.com/laugc2407-bit/voces",
                 "screenshot": None,
             },
         ],
