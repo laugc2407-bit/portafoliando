@@ -104,6 +104,9 @@ html, body, [class*="css"] { font-family: 'Syne', sans-serif; }
 .cl7 .section-label { color: #4df0b4; }
 .cl8 .section-label { color: #f0a84d; }
 .cl9 .section-label { color: #c44df0; }
+.cl11 .section-label { color: #4db8f0; }
+.cl12 .section-label { color: #f04d4d; }
+.cl13 .section-label { color: #f0e44d; }
 
 /* ── App card ─────────────────────────────── */
 .app-card {
@@ -166,6 +169,9 @@ html, body, [class*="css"] { font-family: 'Syne', sans-serif; }
 .btn-primary-7  { background: #4df0b4; color: #0d0d0d; }
 .btn-primary-8  { background: #f0a84d; color: #0d0d0d; }
 .btn-primary-9  { background: #c44df0; color: #fff; }
+.btn-primary-11 { background: #4db8f0; color: #0d0d0d; }
+.btn-primary-12 { background: #f04d4d; color: #fff; }
+.btn-primary-13 { background: #f0e44d; color: #0d0d0d; }
 .btn-ghost {
     background: transparent;
     border: 1px solid #2a2a2a;
@@ -174,10 +180,13 @@ html, body, [class*="css"] { font-family: 'Syne', sans-serif; }
 .btn-ghost:hover { border-color: #666; color: #ccc; }
 
 /* Bg per class */
-.thumb-bg-6 { background: #161f03 !important; }
-.thumb-bg-7 { background: #031f16 !important; }
-.thumb-bg-8 { background: #1f1003 !important; }
-.thumb-bg-9 { background: #110318 !important; }
+.thumb-bg-6  { background: #161f03 !important; }
+.thumb-bg-7  { background: #031f16 !important; }
+.thumb-bg-8  { background: #1f1003 !important; }
+.thumb-bg-9  { background: #110318 !important; }
+.thumb-bg-11 { background: #031520 !important; }
+.thumb-bg-12 { background: #200303 !important; }
+.thumb-bg-13 { background: #1f1e03 !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -287,6 +296,75 @@ CLASSES = {
                 "icon": "🎯",
                 "streamlit": "https://yolooenel2013.streamlit.app",
                 "github": "https://github.com/laugc2407-bit/Yolooo",
+                "screenshot": None,
+            },
+        ],
+    },
+    11: {
+        "color": "#4db8f0",
+        "label": "cl11",
+        "title": "Nombre del tema de la clase 11.",
+        "apps": [
+            {
+                "name": "Nombre de la App 11.1",
+                "desc": "Descripción breve de la app.",
+                "icon": "🔷",
+                "streamlit": "https://TU-APP.streamlit.app",
+                "github": "https://github.com/laugc2407-bit/TU-REPO",
+                "screenshot": None,
+            },
+            {
+                "name": "Nombre de la App 11.2",
+                "desc": "Descripción breve de la app.",
+                "icon": "🔷",
+                "streamlit": "https://TU-APP.streamlit.app",
+                "github": "https://github.com/laugc2407-bit/TU-REPO",
+                "screenshot": None,
+            },
+        ],
+    },
+    12: {
+        "color": "#f04d4d",
+        "label": "cl12",
+        "title": "Nombre del tema de la clase 12.",
+        "apps": [
+            {
+                "name": "Nombre de la App 12.1",
+                "desc": "Descripción breve de la app.",
+                "icon": "🔴",
+                "streamlit": "https://TU-APP.streamlit.app",
+                "github": "https://github.com/laugc2407-bit/TU-REPO",
+                "screenshot": None,
+            },
+            {
+                "name": "Nombre de la App 12.2",
+                "desc": "Descripción breve de la app.",
+                "icon": "🔴",
+                "streamlit": "https://TU-APP.streamlit.app",
+                "github": "https://github.com/laugc2407-bit/TU-REPO",
+                "screenshot": None,
+            },
+        ],
+    },
+    13: {
+        "color": "#f0e44d",
+        "label": "cl13",
+        "title": "Nombre del tema de la clase 13.",
+        "apps": [
+            {
+                "name": "Nombre de la App 13.1",
+                "desc": "Descripción breve de la app.",
+                "icon": "🟡",
+                "streamlit": "https://TU-APP.streamlit.app",
+                "github": "https://github.com/laugc2407-bit/TU-REPO",
+                "screenshot": None,
+            },
+            {
+                "name": "Nombre de la App 13.2",
+                "desc": "Descripción breve de la app.",
+                "icon": "🟡",
+                "streamlit": "https://TU-APP.streamlit.app",
+                "github": "https://github.com/laugc2407-bit/TU-REPO",
                 "screenshot": None,
             },
         ],
