@@ -244,7 +244,7 @@ CLASSES = {
                 "icon": "😶",
                 "streamlit": "https://tristepqnomepagan.streamlit.app",
                 "github": "https://github.com/laugc2407-bit/Sentimentooos",
-                "screenshot": None,
+                "screenshot": "dehecho.jpg",
             },
             {
                 "name": "WordCloud Studio",
