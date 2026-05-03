@@ -116,23 +116,16 @@ html, body, [class*="css"] { font-family: 'Syne', sans-serif; }
 
 .app-thumb {
     aspect-ratio: 16/10;
-    background: #111;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 8px;
     border-bottom: 1px solid #2a2a2a;
     overflow: hidden;
 }
-.app-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.thumb-icon { font-size: 28px; opacity: 0.3; }
-.thumb-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #555;
+.thumb-icon-large {
+    font-size: 72px;
+    line-height: 1;
+    filter: drop-shadow(0 4px 24px rgba(0,0,0,0.4));
 }
 
 .app-body { padding: 14px 16px; flex: 1; display: flex; flex-direction: column; }
@@ -167,13 +160,13 @@ html, body, [class*="css"] { font-family: 'Syne', sans-serif; }
 }
 .btn-ghost:hover { border-color: #666; color: #ccc; }
 
-.thumb-bg-6  { background: #161f03 !important; }
-.thumb-bg-7  { background: #031f16 !important; }
-.thumb-bg-8  { background: #1f1003 !important; }
-.thumb-bg-9  { background: #110318 !important; }
-.thumb-bg-11 { background: #031520 !important; }
-.thumb-bg-12 { background: #200303 !important; }
-.thumb-bg-13 { background: #1f1e03 !important; }
+.thumb-bg-6  { background: #161f03; }
+.thumb-bg-7  { background: #031f16; }
+.thumb-bg-8  { background: #1f1003; }
+.thumb-bg-9  { background: #110318; }
+.thumb-bg-11 { background: #031520; }
+.thumb-bg-12 { background: #200303; }
+.thumb-bg-13 { background: #1f1e03; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -244,7 +237,7 @@ CLASSES = {
                 "icon": "😶",
                 "streamlit": "https://tristepqnomepagan.streamlit.app",
                 "github": "https://github.com/laugc2407-bit/Sentimentooos",
-                "screenshot": "dehecho.jpg",
+                "screenshot": None,
             },
             {
                 "name": "WordCloud Studio",
@@ -381,12 +374,10 @@ st.markdown("""
 # ─── Render cards per class ────────────────────────────────────────────────────
 def render_thumb(app, class_num):
     bg_class = f"thumb-bg-{class_num}"
-    if app.get("screenshot"):
-        return f'<div class="app-thumb"><img src="{app["screenshot"]}" alt="{app["name"]}"></div>'
+    icon = app.get("icon", "📦")
     return f"""
     <div class="app-thumb {bg_class}">
-        <span class="thumb-icon">{app.get("icon", "📦")}</span>
-        <span class="thumb-label">screenshot</span>
+        <span class="thumb-icon-large">{icon}</span>
     </div>"""
 
 def render_card(app, class_num):
